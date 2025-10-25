@@ -11,8 +11,9 @@ bool is_Pyth(size_t a, size_t b, size_t c)
 
 int main()
 {
-  size_t count = 0;
   size_t a = 0, b = 0, c = 0;
+  std::cin >> c >> b;
+  size_t count = 0;
   while (std::cin >> a){
     count += is_Pyth(a,b,c)? 1:0;
     c = b;
