@@ -3,10 +3,13 @@
 
 int main()
 {
+  size_t count = 0;
   size_t a = 0;
-  std::cin >> a;
+  while (std::cin >> a){
+    count += 1;
+  }
   if (std::cin.eof()){
-    std::cout << 0 << '\n';
+    std::cout << count << '\n';
   }
   else if (std::cin.fail()){
     std::cout << "Error\n";
